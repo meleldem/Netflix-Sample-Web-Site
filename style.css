@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*arka plan resim*/
+.arkaplan{
+    background-image: url("nt.jpg");
+    opacity: 0.;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   width: 100%;
+   height: 100vh;
+}
+.arkaplan::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    box-shadow: inset 30px 10px 150px #000000;
+}
+/*logo*/
+header .logo img{
+    position: relative;
+    z-index: 2;
+    width: 170px;
+    margin: 20px 0 0 40px;
+}
+/*form*/
+main .form{
+    z-index: 3;
+    position: relative;
+    padding: 1rem;
+    margin: 0 auto;
+    position: relative;
+    top: 10%;
+    width: 400px;
+    height: 520px;
+    background-color: rgba(0, 0, 0, 0.767);
+   
+}
+
+
+/*form etiket başlığı*/
+main .form h2{
+    color: white;
+    text-transform: uppercase;
+    margin-left: 25px;
+    padding: 5px;
+}
+/*input ve labeller*/
+main .form label,.kayit{
+    width: 20rem;
+    height: 3rem;
+    margin-left: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #39383850;
+    color: white;
+}
+main .form input::placeholder{
+    padding-left: 10px;
+    color: rgba(223, 221, 221, 0.527);
+    font-weight: 500;
+}
+main .form input[type="text"]{
+    appearance: auto;
+    box-sizing: border-box;
+    padding: 1px 2px;
+}
+
+/*sign butonu ve hoveri*/
+main .form .btn{
+    width: 20rem;
+    height: 3rem;
+    border-radius: 5px;
+    margin-left: 24px;
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border: 0px;
+}
+main .form .btn:hover{
+    background-color: rgb(102, 20, 20);
+    transition: 0.3s;
+}
+/*remember me ve need help kısmı*/
+.remember{
+    color: rgba(223, 221, 221, 0.527);
+    display: inline-block;
+    padding: 10px;
+    margin-left: 10px;
+}
+.remember-a{
+    float: right;
+    color: rgba(223, 221, 221, 0.527);
+    position: relative;
+    bottom: 31px;
+    right: 20px;
+    text-decoration: none;
+}
+.remember-a:hover{
+    text-decoration:underline;
+}
+
+/* facebook kısmı*/
+.facebook{
+    padding: 30px;
+}
+.facebook img{
+cursor: pointer;
+}
+.facebook p{
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    bottom: 3px;
+    font-size: 15px;
+    color: rgba(223, 221, 221, 0.527);
+}
+/*New to netflix kısmı*/
+.new{
+    color: rgba(223, 221, 221, 0.527);
+}
+.new h4{
+    font-weight: 500;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.new .new-span1 a{
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.new .new-span1 a:hover{
+    text-decoration: underline;
+}
+.new p{
+    font-size: 13px;
+    width: 290px;
+    margin-left: 30px;
+}
+.new p a{
+    color: rgb(236, 113, 20);
+    text-decoration: none;
+}
+.new p a:hover{
+    text-decoration: underline;
+}
